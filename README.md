@@ -7,6 +7,14 @@
 - Supports MP3, WAV, and OGG on most browsers (for more info, see [Media container formats](https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers)).
 - Automatic light/dark mode based on user's system preferences.
 
+## Installation & Development
+
+In the project directury, run:
+```bash
+npm install
+npm run dev
+```
+
 ## Getting Started
 
 Import the `AudioPlayer` component to your project. It accepts two props:
