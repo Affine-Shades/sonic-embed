@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--background-colour);
+  border-radius: 1rem;
+  border: 0.1rem solid var(--border-colour);
+}
+
+.playerContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+.topLevelContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  min-width: 10rem;
+  gap: 1rem;
+}
+
+.controlContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,7 @@
+.image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-height: 9.5rem;  
+  border-radius: 1rem;
+  border: 0.1rem solid var(--artwork-border-colour);      
+}

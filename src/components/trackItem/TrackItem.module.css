@@ -1,0 +1,42 @@
+.container {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+}
+
+.container:hover {
+  background-color: var(--track-hover-colour);
+}
+
+.container:last-child {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 0.9rem;
+  color: var(--subheading-colour);
+}
+
+.title {
+  font-size: 0.8rem;
+  color: var(--heading-colour);
+}
+
+.artist {
+  font-size: 0.8rem;
+  color: var(--subheading-colour);
+}

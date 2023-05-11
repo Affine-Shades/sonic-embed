@@ -1,0 +1,8 @@
+.button {
+  display: inherit;
+  cursor: pointer;
+  border: none;
+  color: var(--primary-colour);
+  background-color: transparent;
+  padding: 0;
+}

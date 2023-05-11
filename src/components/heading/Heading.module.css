@@ -1,0 +1,13 @@
+.heading {
+    color: var(--heading-colour);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subheading {
+    color: var(--subheading-colour);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}

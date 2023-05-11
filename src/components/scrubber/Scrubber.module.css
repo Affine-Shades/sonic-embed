@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  align-self: stretch;
+}
+
+.time {
+  color: var(--time-colour);
+  font-size: 0.8rem;
+  width: 2.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slider	 {
+  position: relative;
+  display: flex;
+  flex-grow: 1;  
+}
+
