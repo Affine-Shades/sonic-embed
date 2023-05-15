@@ -5,7 +5,7 @@ interface Props {
 }
 
 function Artwork({ src }: Props) {
-  return <img className={styles.image} src={src} alt="Cover" />;
+  return <img className={styles.image} src={src} alt="Cover" loading="lazy" />;
 }
 
 export default Artwork;
