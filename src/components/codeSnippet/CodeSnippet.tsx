@@ -10,12 +10,12 @@ function CodeSnippet({ code }: Props) {
   const successToast = () =>
     toast.success(
       "Code copied to clipboard! 🎉 Now you can paste the code into Sonic Pi and start jamming away. 🎶",
-      { duration: 4000 }
+      { duration: 4000, id: "copySuccess" }
     );
   const errorToast = () =>
     toast.error(
       "Sorry, an error occurred while copying the code snippet to your clipboard. Please try again later.",
-      { duration: 4000 }
+      { duration: 4000, id: "copyError" }
     );
 
   const handleCopySnippet = async () => {

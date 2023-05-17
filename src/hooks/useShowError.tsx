@@ -9,7 +9,7 @@ function useShowError({ error }: Props) {
   const errorToast = () => {
     toast.error(
       "Sorry, an error occurred while loading this track. Please try again later.",
-      { duration: 6000 }
+      { duration: 6000, id: "loadError" }
     );
   };
 
