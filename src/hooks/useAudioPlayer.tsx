@@ -31,11 +31,13 @@ function useAudioPlayer({ src }: Props) {
     setState((prevState) => ({ ...prevState, isLoading: false }));
   };
 
-  const onPlay = () =>
+  const onPlay = () => {
     setState((prevState) => ({ ...prevState, isPlaying: true }));
+  };
 
-  const onPause = () =>
+  const onPause = () => {
     setState((prevState) => ({ ...prevState, isPlaying: false }));
+  };
 
   const onEmptied = () => {
     setState((prevState) => ({
