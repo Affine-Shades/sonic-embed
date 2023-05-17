@@ -3,14 +3,12 @@ import toast from "react-hot-toast";
 
 interface Props {
   error: boolean;
+  message: string;
 }
 
-function useShowError({ error }: Props) {
+function useShowError({ error, message }: Props) {
   const errorToast = () => {
-    toast.error(
-      "Sorry, an error occurred while loading this track. Please try again later.",
-      { duration: 6000, id: "loadError" }
-    );
+    toast.error(message, { duration: 6000, id: `id of ${message}` });
   };
 
   useEffect(() => {

@@ -40,7 +40,11 @@ function AudioPlayer({ data, showArtwork = false }: Props) {
     setCurrentIndex(index);
   };
 
-  useShowError({ error: state.error });
+  useShowError({
+    error: state.error,
+    message:
+      "Sorry, an error occurred while loading this track. Please try again later.",
+  });
 
   return (
     <div className={styles.container}>

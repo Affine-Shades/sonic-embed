@@ -27,7 +27,7 @@ const data = [
     artist: "Darin Wilson",
     src: exampleTrack,
     code: code,
-  }
+  },
 ];
 
 function App() {
