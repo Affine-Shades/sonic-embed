@@ -44,7 +44,7 @@ function useAudioPlayer({ src }: Props) {
     }));
   };
 
-  const onDurationChange = () => {
+  const onLoadedMetadata = () => {
     const el = ref.current;
     if (!el) {
       return;
@@ -54,6 +54,7 @@ function useAudioPlayer({ src }: Props) {
       ...prevState,
       duration,
       buffered: parseTimeRanges(buffered),
+      error: false,
     }));
   };
 
@@ -123,7 +124,7 @@ function useAudioPlayer({ src }: Props) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    el.addEventListener("loadedmetadata", onDurationChange);
+    el.addEventListener("loadedmetadata", onLoadedMetadata);
     el.addEventListener("progress", onProgress);
     el.addEventListener("timeupdate", onTimeUpdate);
     el.addEventListener("ended", onPause);
@@ -137,7 +138,7 @@ function useAudioPlayer({ src }: Props) {
     el.addEventListener("error", onError);
 
     return () => {
-      el.removeEventListener("loadedmetadata", onDurationChange);
+      el.removeEventListener("loadedmetadata", onLoadedMetadata);
       el.removeEventListener("progress", onProgress);
       el.removeEventListener("timeupdate", onTimeUpdate);
       el.removeEventListener("ended", onPause);
