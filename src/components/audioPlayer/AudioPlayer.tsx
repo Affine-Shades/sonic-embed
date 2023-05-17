@@ -1,4 +1,3 @@
-import "@fontsource/inter";
 import styles from "./AudioPlayer.module.css";
 import Artwork from "../artwork/Artwork";
 import Heading from "../heading/Heading";

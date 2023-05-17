@@ -17,7 +17,7 @@ function Scrubber({ timePassed, duration, onValueCommit }: Props) {
 
   return (
     <div className={styles.container}>
-      <span className={styles.time}>{parseToMinutes(timePassed)}</span>
+      <span className={styles.time}>{parseToMinutes(sliderValue)}</span>
       <Slider
         className={styles.slider}
         trackStyle={{ backgroundColor: "var(--slider-track-colour)" }}

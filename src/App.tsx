@@ -1,5 +1,6 @@
 import AudioPlayer from "./components/audioPlayer/AudioPlayer";
 import exampleTrack from "./assets/ambient_experiment.wav";
+import "@fontsource/inter";
 
 // Sample taken from Sonic Pi's documentation
 const code = `
