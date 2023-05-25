@@ -51,13 +51,14 @@ const data = [
   {
     title: "Sample beat",
     artist: "Darin Wilson",
+    artwork: exampleArt,
     src: exampleTrack,
     code: code,
   },
 ];
 
 function App() {
-  return <AudioPlayer data={data} />;
+  return <AudioPlayer data={data} showArtwork={true} />;
 }
 
 export default App;

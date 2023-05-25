@@ -24,7 +24,6 @@ function AudioPlayer({ data, showArtwork = false }: Props) {
   });
 
   const handleSeekForward = () => controls.seek(state.time + 30);
-  
   const handleSeekBackward = () => controls.seek(state.time - 30);
   const handlePausePlay = () => {
     state.isPlaying ? controls.pause() : controls.play();
