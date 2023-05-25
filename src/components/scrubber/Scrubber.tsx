@@ -12,7 +12,6 @@ interface Props {
 function Scrubber({ timePassed, duration, onValueCommit }: Props) {
   const [sliderValue, setSliderValue, canUpdate] = useScrubber({
     timePassed,
-    duration,
   });
 
   return (

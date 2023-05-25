@@ -54,7 +54,7 @@ function useAudioPlayer({ src }: Props) {
     const { duration, buffered } = el;
     setState((prevState) => ({
       ...prevState,
-      duration,
+      duration: duration,
       buffered: parseTimeRanges(buffered),
       error: false,
     }));

@@ -69,6 +69,7 @@ function AudioPlayer({ data, showArtwork = false }: Props) {
               isLoading={state.isLoading}
             />
             <Scrubber
+              key={`${state.duration} idx ${currentIndex}`}
               timePassed={state.time}
               duration={state.duration}
               onValueCommit={(newValue) => handleOnValueCommit(newValue)}
