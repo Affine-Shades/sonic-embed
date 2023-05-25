@@ -1,5 +1,6 @@
 import AudioPlayer from "./components/audioPlayer/AudioPlayer";
 import exampleTrack from "./assets/ambient_experiment.wav";
+import exampleArt from "./assets/album_art.png"
 import "@fontsource/inter";
 
 // Sample taken from Sonic Pi's documentation
@@ -24,14 +25,15 @@ end
 const data = [
   {
     title: "Sample beat",
-    artist: "Darin Wilson",
-    src: exampleTrack,
+    artist: "Darin Wilson", 
+    artwork: exampleArt,
+    src: exampleTrack,    
     code: code,
   },
 ];
 
 function App() {
-  return <AudioPlayer data={data} />;
+  return <AudioPlayer data={data} showArtwork={true} />;
 }
 
 export default App;

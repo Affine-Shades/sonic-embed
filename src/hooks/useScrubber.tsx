@@ -12,7 +12,7 @@ function useScrubber({ timePassed }: Props) {
 
   useEffect(() => {
     if (canUpdate.current && timePassed) {
-      requestAnimationFrame(() => setSliderValue(timePassed));
+      requestAnimationFrame(() => setSliderValue(timePassed));            
     }
   }, [timePassed]);
 
