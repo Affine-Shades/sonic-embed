@@ -11,5 +11,5 @@ const vitestConfig: VitestUserConfigInterface = {
 
 export default defineConfig({
   plugins: [react()],
-  test: vitestConfig.test,
+  test: vitestConfig.test,  
 });
