@@ -1,17 +1,17 @@
-export interface Track {
+interface Track {
   title: string;
   artist: string;
   artwork?: string;
   code?: string;
-  src: string;  
+  src: string;
 }
 
-export interface TimeRange {
+interface TimeRange {
   start: number;
   end: number;
 }
 
-export interface TrackState {
+interface TrackState {
   buffered: TimeRange[];
   duration: number;
   time: number;
@@ -21,7 +21,7 @@ export interface TrackState {
   error: boolean;
 }
 
-export interface Controls {
+interface Controls {
   play: () => void;
   pause: () => void;
   seek: (time: number) => void;

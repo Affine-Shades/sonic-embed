@@ -1,5 +1,3 @@
-import { TimeRange } from "../types";
-
 export const parseToMinutes = (seconds: number): string => {
   const min = Math.floor(seconds / 60);
   const formattedMinutes = min < 10 ? `0${min}` : `${min}`;

@@ -6,7 +6,6 @@ import useAudioPlayer from "../../hooks/useAudioPlayer";
 import TrackList from "../trackList/TrackList";
 import { useState } from "react";
 import ButtonControls from "../buttonControls/ButtonControls";
-import { Track } from "../../types";
 import CodeSnippet from "../codeSnippet/CodeSnippet";
 import { Toaster } from "react-hot-toast";
 import useShowError from "../../hooks/useShowError";

@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { parseTimeRanges } from "../utils/timeUtils";
-import { TrackState, Controls } from "../types";
 
 // custom hook for handling HTMLAudioElement
 // returns an array of ref, track state, and controls
@@ -126,6 +125,7 @@ function useAudioPlayer({ src }: Props) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    console.log("useEffect");
     el.addEventListener("loadedmetadata", onLoadedMetadata);
     el.addEventListener("progress", onProgress);
     el.addEventListener("timeupdate", onTimeUpdate);

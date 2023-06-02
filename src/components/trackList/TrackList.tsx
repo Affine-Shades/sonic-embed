@@ -1,5 +1,4 @@
 import styles from "./TrackList.module.css";
-import { Track } from "../../types";
 import TrackItem from "../trackItem/TrackItem";
 
 interface Props {  
